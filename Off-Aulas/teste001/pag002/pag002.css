@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font: 400 1em Roboto, Helvetica, sans-serif;
+    background-color: #060755;
+}
+
+h1 {
+    text-align: center;
+}
+
+.fundopri {
+    background-color: #2563EB;
+    border-radius: 5px;
+}
+
+.paddingum {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.paddingdois {
+    padding-left: 10px;
+    padding-right: 3px;
+}
+
+.paddingtres {
+    padding-right: 8px;
+}
+
+.larguraum {
+    width: 6em;
+}
+
+.larguradois {
+    width: 200px;
+}
+
+.larguratres {
+    width: 13em;
+}
+
+.larguraquatro {
+    width: 28em;
+}
+
+.larguracinco {
+    width: 180px;
+}
