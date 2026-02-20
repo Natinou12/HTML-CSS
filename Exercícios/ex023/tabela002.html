@@ -4,20 +4,118 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabela</title>
+  <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+        width: 500px;
+
+        border-collapse: collapse;
+    }
+
+    td {
+        border: 1px solid black;
+        
+        padding: 10px;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+
+        padding: 10px;
+
+        background-color: lightgray;
+    }
+
+    thead, th, tfoot {
+        background-color: #383838;
+
+        color: white;
+
+        border: 1px solid black;
+        
+        padding: 10px;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+
+        background-color: #383838;
+    }
+
+    tbody > tr:nth-child(even) {
+        background-color: gray;
+    }
+
+    .num {
+        text-align: right;
+    }
+
+    .negrito {
+        font-weight: bold;
+    }
+  </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
         <tbody>
-
+            <tr>
+                <td class="pais">São Paulo</td>
+                <td class="num negrito">46.081.801</td>
+            </tr>
+            <tr>
+                <td class="pais">Minas Gerais</td>
+                <td class="num negrito">21.393.441</td>
+            </tr>
+            <tr>
+                <td class="pais">Rio de Janeiro</td>
+                <td class="num negrito">17.223.547</td>
+            </tr>
+            <tr>
+                <td class="pais">Bahia</td>
+                <td class="num">14.870.907</td>
+            </tr>
+            <tr>
+                <td class="pais">Paraná</td>
+                <td class="num">11.890.517</td>
+            </tr>
+            <tr>
+                <td class="pais">Rio Grande do Sul</td>
+                <td class="num">11.233.263</td>
+            </tr>
+            <tr>
+                <td class="pais">Pernanbuco</td>
+                <td class="num">9.562.007</td>
+            </tr>
+            <tr>
+                <td class="pais">Ceará</td>
+                <td class="num">9.268.836</td>
+            </tr>
+            <tr>
+                <td class="pais">Pará</td>
+                <td class="num">8 711 196</td>
+            </tr>
+            <tr>
+                <td class="pais">Santa Catarina</td>
+                <td class="num">8.187.029</td>
+            </tr>
         </tbody>
         <tfoot>
-
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num negrito">158.422.544</td>
+            </tr>
         </tfoot>
     </table>
 </body>
