@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 500px;
+
+    border-collapse: collapse;
+}
+
+caption {
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.num {
+    text-align: right;
+}
+
+.result {
+    text-align: center;
+}
+
+.aprovado {
+    background-color: #90ee90;
+}
+
+.reprovado {
+    background-color: #FF7F7F;
+}
+
