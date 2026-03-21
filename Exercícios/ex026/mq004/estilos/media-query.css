@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* Todas as outra medias */
+
+/* Os Breakpoints de hoje em dia
+------------------------------------------
+
+0 – 480px → mobile pequeno
+481 – 768px → mobile grande / landscape
+768 – 1023px → tablet
+1024 – 1200px → laptop / desktop pequeno
+1201 – 1440px → desktop padrão
+1440px+ → telas grandes / 4K / ultrawide 
+
+-----------------------------------------
+*/
+
+@media print { /* impressora */
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /* Num precisa */
+    }
+
+    #tablet, #desk, #tv, #phone {
+        display: none;
+    }
+
+    #print {
+        display: block;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        color: black;
+
+        text-shadow: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) { /* tablet */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone, #print, #desk, #tv {
+    display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) { /* laptop/desktop pequeno */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #tablet, #phone, #print, #tv {
+        display: none;
+    }
+
+    #desk {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1440px) { /* desktop padrao */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #tablet, #phone, #print, #tv {
+        display: none;
+    }
+
+    #desk {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1441px) { /* tv */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    #tablet, #print, #desk, #phone {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
+}
