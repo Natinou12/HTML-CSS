@@ -10,6 +10,10 @@
 
         display: flex;
         flex-flow: row wrap;
+
+        height: 400px;
+
+        align-items: center;
       }
 
       div.item {
@@ -23,31 +27,31 @@
       }
 
       div#i1 {
-        order: 6;
+        align-self: flex-end;
       }
 
       div#i2 {
-        order: 5;
+        align-self: center;
       }
 
       div#i3 {
-        order: 4;
+        align-self: flex-start;
       }
 
       div#i4 {
-        order: 3;
+        align-self: auto;
       }
 
       div#i5 {
-        order: 2;
+        align-self: flex-end;
       }
 
       div#i6 {
-        order: 1;
+        align-self: auto;
       }
 
       div#i7 {
-        order: 0;
+        align-self: flex-start;
       }
     </style>
   </head>
@@ -59,7 +63,7 @@
       <div class="item" id="i4">D</div>
       <div class="item" id="i5">E</div>
       <div class="item" id="i6">F</div>
-      <div class="item" id="7i">G</div>
+      <div class="item" id="i7">G</div>
     </div>
   </body>
 </html>
