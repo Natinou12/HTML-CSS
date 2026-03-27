@@ -39,6 +39,14 @@ header > h1 {
     flex: 0 0 200px;
 }
 
+header > h1  {
+    text-shadow: 1px 6px 9px rgba(0, 0, 0, 0.404);
+}
+
+article > h2 {
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.522);
+}
+
 header > nav {
     display: flex;
 
